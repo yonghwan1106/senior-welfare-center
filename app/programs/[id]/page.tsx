@@ -60,18 +60,26 @@ export default async function ProgramDetailPage({ params }: Props) {
           {/* 프로그램 헤더 */}
           <div className="bg-card border rounded-2xl overflow-hidden mb-8">
             {/* 이미지 영역 */}
-            <div className="h-64 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center relative">
-              <GraduationCap className="w-24 h-24 text-primary/50" />
-              <div className="absolute top-4 left-4 flex gap-2">
+            {/* 이미지 영역 */}
+            <div className="relative h-64 bg-muted">
+              <div className="absolute inset-0">
+                <img
+                  src={program.thumbnail}
+                  alt={program.title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/20" />
+              </div>
+              <div className="absolute top-4 left-4 flex gap-2 z-10">
                 <Badge variant={status.variant} className="text-base px-4 py-1">
                   {status.label}
                 </Badge>
-                <Badge variant="outline" className="text-base px-4 py-1">
+                <Badge variant="outline" className="text-base px-4 py-1 bg-white/20 backdrop-blur-sm text-white border-white/40">
                   {program.category}
                 </Badge>
               </div>
               {program.governmentSupport && (
-                <Badge className="absolute top-4 right-4 bg-secondary text-secondary-foreground text-base px-4 py-1">
+                <Badge className="absolute top-4 right-4 bg-secondary text-secondary-foreground text-base px-4 py-1 z-10">
                   정부지원
                 </Badge>
               )}
