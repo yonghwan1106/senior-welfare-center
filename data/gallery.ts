@@ -18,10 +18,10 @@ export const gallery: GalleryItem[] = [
     id: "gallery-002",
     title: "제15기 요양보호사 수료식",
     description: "3개월간의 교육을 마치고 28명의 수료생이 탄생했습니다. 축하드립니다!",
-    thumbnail: "/images/gallery/caregiver-grad.jpg",
+    thumbnail: "/images/gallery/caregiver-grad.svg",
     images: [
-      "/images/gallery/caregiver-grad-1.jpg",
-      "/images/gallery/caregiver-grad-2.jpg"
+      "/images/gallery/caregiver-grad-1.svg",
+      "/images/gallery/caregiver-grad-2.svg"
     ],
     date: "2025-11-28",
     category: "교육"
@@ -30,11 +30,11 @@ export const gallery: GalleryItem[] = [
     id: "gallery-003",
     title: "가을 건강걷기대회",
     description: "맑은 가을 날씨 속에서 진행된 건강걷기대회 현장입니다.",
-    thumbnail: "/images/gallery/walking-event.jpg",
+    thumbnail: "/images/gallery/walking-event.svg",
     images: [
-      "/images/gallery/walking-event-1.jpg",
-      "/images/gallery/walking-event-2.jpg",
-      "/images/gallery/walking-event-3.jpg"
+      "/images/gallery/walking-event-1.svg",
+      "/images/gallery/walking-event-2.svg",
+      "/images/gallery/walking-event-3.svg"
     ],
     date: "2025-10-15",
     category: "행사"
@@ -43,10 +43,10 @@ export const gallery: GalleryItem[] = [
     id: "gallery-004",
     title: "서예작품 전시회",
     description: "서예 교실 수강생들의 1년간 작품을 전시한 전시회입니다.",
-    thumbnail: "/images/gallery/calligraphy-exhibit.jpg",
+    thumbnail: "/images/gallery/calligraphy-exhibit.svg",
     images: [
-      "/images/gallery/calligraphy-exhibit-1.jpg",
-      "/images/gallery/calligraphy-exhibit-2.jpg"
+      "/images/gallery/calligraphy-exhibit-1.svg",
+      "/images/gallery/calligraphy-exhibit-2.svg"
     ],
     date: "2025-09-20",
     category: "교육"
@@ -55,11 +55,11 @@ export const gallery: GalleryItem[] = [
     id: "gallery-005",
     title: "봄맞이 나들이",
     description: "벚꽃 피는 봄날, 인근 공원으로 나들이를 다녀왔습니다.",
-    thumbnail: "/images/gallery/spring-outing.jpg",
+    thumbnail: "/images/gallery/spring-outing.svg",
     images: [
-      "/images/gallery/spring-outing-1.jpg",
-      "/images/gallery/spring-outing-2.jpg",
-      "/images/gallery/spring-outing-3.jpg"
+      "/images/gallery/spring-outing-1.svg",
+      "/images/gallery/spring-outing-2.svg",
+      "/images/gallery/spring-outing-3.svg"
     ],
     date: "2025-04-10",
     category: "일상"
@@ -68,10 +68,10 @@ export const gallery: GalleryItem[] = [
     id: "gallery-006",
     title: "2025 어버이날 행사",
     description: "어버이날을 맞아 지역 초등학생들과 함께한 특별한 행사입니다.",
-    thumbnail: "/images/gallery/parents-day.jpg",
+    thumbnail: "/images/gallery/parents-day.svg",
     images: [
-      "/images/gallery/parents-day-1.jpg",
-      "/images/gallery/parents-day-2.jpg"
+      "/images/gallery/parents-day-1.svg",
+      "/images/gallery/parents-day-2.svg"
     ],
     date: "2025-05-08",
     category: "행사"
@@ -80,10 +80,10 @@ export const gallery: GalleryItem[] = [
     id: "gallery-007",
     title: "경로당 방문 봉사활동",
     description: "일자리사업 참여자들이 지역 경로당을 방문하여 봉사활동을 펼쳤습니다.",
-    thumbnail: "/images/gallery/volunteer.jpg",
+    thumbnail: "/images/gallery/volunteer.svg",
     images: [
-      "/images/gallery/volunteer-1.jpg",
-      "/images/gallery/volunteer-2.jpg"
+      "/images/gallery/volunteer-1.svg",
+      "/images/gallery/volunteer-2.svg"
     ],
     date: "2025-06-15",
     category: "일상"
@@ -92,10 +92,10 @@ export const gallery: GalleryItem[] = [
     id: "gallery-008",
     title: "실버시터 1기 발대식",
     description: "첫 번째 실버시터 양성과정 수료생 20명의 발대식이 진행되었습니다.",
-    thumbnail: "/images/gallery/silversitter-start.jpg",
+    thumbnail: "/images/gallery/silversitter-start.svg",
     images: [
-      "/images/gallery/silversitter-start-1.jpg",
-      "/images/gallery/silversitter-start-2.jpg"
+      "/images/gallery/silversitter-start-1.svg",
+      "/images/gallery/silversitter-start-2.svg"
     ],
     date: "2025-07-20",
     category: "교육"
