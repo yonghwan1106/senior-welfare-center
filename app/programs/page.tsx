@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Calendar, Users, Clock, GraduationCap, Sparkles, ArrowRight, Filter, Search } from 'lucide-react';
+import Image from 'next/image';
 import { PageTitle } from '@/components/common';
 import { Card, CardHeader, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -69,11 +70,10 @@ export default function ProgramsPage() {
                     variant={selectedCategory === category ? 'default' : 'outline'}
                     size="sm"
                     onClick={() => setSelectedCategory(category)}
-                    className={`min-h-[44px] rounded-xl transition-all ${
-                      selectedCategory === category
+                    className={`min-h-[44px] rounded-xl transition-all ${selectedCategory === category
                         ? 'shadow-elegant'
                         : 'hover:border-primary/50'
-                    }`}
+                      }`}
                   >
                     {category}
                   </Button>
@@ -94,11 +94,10 @@ export default function ProgramsPage() {
                     variant={selectedStatus === status ? 'default' : 'outline'}
                     size="sm"
                     onClick={() => setSelectedStatus(status)}
-                    className={`min-h-[44px] rounded-xl transition-all ${
-                      selectedStatus === status
+                    className={`min-h-[44px] rounded-xl transition-all ${selectedStatus === status
                         ? 'shadow-elegant'
                         : 'hover:border-primary/50'
-                    }`}
+                      }`}
                   >
                     {status}
                   </Button>
@@ -128,15 +127,14 @@ export default function ProgramsPage() {
                 style={{ animationDelay: `${index * 80}ms` }}
               >
                 {/* 이미지 영역 */}
-                <div className="relative h-52 bg-gradient-to-br from-primary/10 via-accent/10 to-warm/10 flex items-center justify-center overflow-hidden">
-                  <div className="absolute inset-0 pattern-traditional opacity-30" />
-
-                  <div className="absolute top-4 left-4 w-20 h-20 bg-primary/20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-700" />
-                  <div className="absolute bottom-4 right-4 w-16 h-16 bg-warm/20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-700" />
-
-                  <div className="relative z-10 w-20 h-20 bg-card/90 backdrop-blur-sm rounded-2xl shadow-elegant flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                    <GraduationCap className="w-10 h-10 text-primary" />
-                  </div>
+                <div className="relative h-52 overflow-hidden bg-muted">
+                  <Image
+                    src={program.thumbnail}
+                    alt={program.title}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
 
                   <div className="absolute top-4 left-4 flex gap-2 z-20">
                     <Badge className={`${status.className} shadow-sm`}>
@@ -209,11 +207,10 @@ export default function ProgramsPage() {
                 <CardFooter className="pt-0 pb-5">
                   <Button
                     asChild
-                    className={`w-full h-12 rounded-xl font-semibold btn-hover ${
-                      program.status === 'recruiting'
+                    className={`w-full h-12 rounded-xl font-semibold btn-hover ${program.status === 'recruiting'
                         ? 'bg-primary hover:bg-primary/90'
                         : 'bg-muted text-foreground hover:bg-muted/80'
-                    }`}
+                      }`}
                   >
                     <Link href={`/programs/${program.id}`} className="flex items-center justify-center gap-2">
                       {program.status === 'recruiting' ? '신청하기' : '자세히 보기'}

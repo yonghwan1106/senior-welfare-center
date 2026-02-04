@@ -6,7 +6,7 @@ export const programs: Program[] = [
     title: "요양보호사 자격증 과정",
     category: "자격증",
     description: "국가공인 요양보호사 자격증 취득을 위한 240시간 교육과정입니다. 이론 80시간, 실기 80시간, 실습 80시간으로 구성됩니다.",
-    thumbnail: "/images/programs/caregiver.jpg",
+    thumbnail: "/images/programs/caregiver.svg",
     duration: "3개월 (240시간)",
     schedule: "월~금 09:00~13:00",
     capacity: 30,

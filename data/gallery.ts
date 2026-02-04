@@ -5,11 +5,11 @@ export const gallery: GalleryItem[] = [
     id: "gallery-001",
     title: "2025년 송년행사",
     description: "한 해를 마무리하는 송년 잔치에서 어르신들이 즐거운 시간을 보내셨습니다.",
-    thumbnail: "/images/gallery/yearend-2025.jpg",
+    thumbnail: "/images/gallery/yearend-2025.svg",
     images: [
-      "/images/gallery/yearend-2025-1.jpg",
-      "/images/gallery/yearend-2025-2.jpg",
-      "/images/gallery/yearend-2025-3.jpg"
+      "/images/gallery/yearend-2025-1.svg",
+      "/images/gallery/yearend-2025-2.svg",
+      "/images/gallery/yearend-2025-3.svg"
     ],
     date: "2025-12-20",
     category: "행사"

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Camera, X, Images, ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 import { PageTitle } from '@/components/common';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -63,11 +64,10 @@ export default function GalleryPage() {
               key={category}
               variant={selectedCategory === category ? 'default' : 'outline'}
               onClick={() => setSelectedCategory(category)}
-              className={`rounded-full px-6 h-12 font-medium transition-all ${
-                selectedCategory === category
-                  ? 'shadow-elegant'
-                  : 'border-border/50 hover:border-primary/50'
-              }`}
+              className={`rounded-full px-6 h-12 font-medium transition-all ${selectedCategory === category
+                ? 'shadow-elegant'
+                : 'border-border/50 hover:border-primary/50'
+                }`}
             >
               {category}
             </Button>
@@ -83,17 +83,15 @@ export default function GalleryPage() {
               className="group relative aspect-square rounded-3xl overflow-hidden bg-muted text-left opacity-0-initial animate-scale-in"
               style={{ animationDelay: `${index * 50}ms` }}
             >
-              {/* 그라데이션 배경 */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/10 to-warm/20" />
-
-              {/* 패턴 */}
-              <div className="absolute inset-0 pattern-traditional opacity-30" />
-
-              {/* 중앙 아이콘 */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-16 h-16 bg-card/80 backdrop-blur-sm rounded-2xl shadow-elegant flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                  <Camera className="w-8 h-8 text-primary/60" />
-                </div>
+              {/* 이미지 영역 */}
+              <div className="absolute inset-0 bg-muted">
+                <Image
+                  src={item.thumbnail}
+                  alt={item.title}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
               </div>
 
               {/* 호버 오버레이 */}
@@ -160,9 +158,13 @@ export default function GalleryPage() {
               onClick={(e) => e.stopPropagation()}
             >
               {/* 이미지 영역 */}
-              <div className="aspect-video bg-gradient-to-br from-primary/20 via-accent/10 to-warm/20 flex items-center justify-center relative">
-                <div className="absolute inset-0 pattern-traditional opacity-30" />
-                <Camera className="w-24 h-24 text-primary/40 relative z-10" />
+              <div className="aspect-video bg-black flex items-center justify-center relative overflow-hidden">
+                <Image
+                  src={selectedItem.thumbnail}
+                  alt={selectedItem.title}
+                  fill
+                  className="object-contain"
+                />
               </div>
 
               {/* 정보 */}
