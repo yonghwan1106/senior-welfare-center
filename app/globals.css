@@ -6,8 +6,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-noto-sans-kr), var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-nanum-myeongjo);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -37,6 +38,10 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-warm: var(--warm);
+  --color-warm-foreground: var(--warm-foreground);
+  --color-earth: var(--earth);
+  --color-earth-foreground: var(--earth-foreground);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -47,44 +52,62 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  /* 노인 친화적 컬러 팔레트 - 따뜻한 녹색 계열 */
-  --background: oklch(0.99 0 0);
-  --foreground: oklch(0.15 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0 0);
-  /* Primary - 따뜻한 녹색 (안정감, 건강) */
-  --primary: oklch(0.55 0.15 145);
-  --primary-foreground: oklch(1 0 0);
-  /* Secondary - 따뜻한 주황 (친근함) */
-  --secondary: oklch(0.92 0.05 80);
-  --secondary-foreground: oklch(0.25 0.05 50);
-  --muted: oklch(0.96 0.01 100);
-  --muted-foreground: oklch(0.45 0 0);
-  --accent: oklch(0.95 0.03 145);
-  --accent-foreground: oklch(0.25 0.1 145);
+  --radius: 1rem;
+
+  /* 한국적 감성의 따뜻한 컬러 팔레트 */
+  /* 배경: 한지 느낌의 따뜻한 아이보리 */
+  --background: oklch(0.985 0.008 85);
+  --foreground: oklch(0.22 0.02 45);
+
+  /* 카드: 부드러운 크림색 */
+  --card: oklch(0.995 0.005 85);
+  --card-foreground: oklch(0.22 0.02 45);
+  --popover: oklch(0.995 0.005 85);
+  --popover-foreground: oklch(0.22 0.02 45);
+
+  /* Primary - 단청의 청록색 (전통/신뢰/안정) */
+  --primary: oklch(0.45 0.12 175);
+  --primary-foreground: oklch(0.995 0.005 85);
+
+  /* Secondary - 따뜻한 황토색 (친근/편안) */
+  --secondary: oklch(0.94 0.03 75);
+  --secondary-foreground: oklch(0.35 0.08 55);
+
+  /* Warm - 단청의 주홍/적색 (활력/따뜻함) */
+  --warm: oklch(0.58 0.18 28);
+  --warm-foreground: oklch(0.995 0.005 85);
+
+  /* Earth - 흙빛/갈색 (안정/자연) */
+  --earth: oklch(0.55 0.08 55);
+  --earth-foreground: oklch(0.995 0.005 85);
+
+  --muted: oklch(0.96 0.012 80);
+  --muted-foreground: oklch(0.42 0.02 55);
+  --accent: oklch(0.93 0.025 175);
+  --accent-foreground: oklch(0.35 0.1 175);
   --destructive: oklch(0.55 0.2 25);
-  --border: oklch(0.88 0.02 100);
-  --input: oklch(0.92 0.01 100);
-  --ring: oklch(0.55 0.15 145);
-  --chart-1: oklch(0.55 0.15 145);
-  --chart-2: oklch(0.65 0.15 80);
-  --chart-3: oklch(0.5 0.1 250);
-  --chart-4: oklch(0.7 0.12 45);
-  --chart-5: oklch(0.6 0.1 180);
-  --sidebar: oklch(0.98 0.01 145);
-  --sidebar-foreground: oklch(0.15 0 0);
-  --sidebar-primary: oklch(0.55 0.15 145);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.92 0.03 145);
-  --sidebar-accent-foreground: oklch(0.25 0.1 145);
-  --sidebar-border: oklch(0.88 0.02 100);
-  --sidebar-ring: oklch(0.55 0.15 145);
+  --border: oklch(0.90 0.02 75);
+  --input: oklch(0.95 0.01 80);
+  --ring: oklch(0.45 0.12 175);
+
+  /* 차트 컬러 - 오방색 기반 */
+  --chart-1: oklch(0.45 0.12 175); /* 청 */
+  --chart-2: oklch(0.58 0.18 28);  /* 적 */
+  --chart-3: oklch(0.72 0.15 95);  /* 황 */
+  --chart-4: oklch(0.55 0.08 55);  /* 흑(갈) */
+  --chart-5: oklch(0.92 0.02 85);  /* 백 */
+
+  --sidebar: oklch(0.98 0.01 85);
+  --sidebar-foreground: oklch(0.22 0.02 45);
+  --sidebar-primary: oklch(0.45 0.12 175);
+  --sidebar-primary-foreground: oklch(0.995 0.005 85);
+  --sidebar-accent: oklch(0.93 0.025 175);
+  --sidebar-accent-foreground: oklch(0.35 0.1 175);
+  --sidebar-border: oklch(0.90 0.02 75);
+  --sidebar-ring: oklch(0.45 0.12 175);
 
   /* 노인 접근성 폰트 크기 조절용 */
-  --font-size-base: 1.25rem; /* 기본 20px */
+  --font-size-base: 1.25rem;
   --font-size-scale: 1;
 }
 
@@ -101,34 +124,83 @@
   --font-size-scale: 1.15;
 }
 
+/* 한지 텍스처 배경 */
+.hanji-texture {
+  background-image:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* 전통 문양 패턴 */
+.pattern-traditional {
+  background-image:
+    radial-gradient(circle at 25% 25%, oklch(0.45 0.12 175 / 0.03) 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, oklch(0.58 0.18 28 / 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* 부드러운 그라데이션 */
+.gradient-warm {
+  background: linear-gradient(
+    135deg,
+    oklch(0.985 0.008 85) 0%,
+    oklch(0.96 0.015 80) 50%,
+    oklch(0.94 0.02 75) 100%
+  );
+}
+
+.gradient-header {
+  background: linear-gradient(
+    180deg,
+    oklch(0.995 0.005 85) 0%,
+    oklch(0.985 0.008 85) 100%
+  );
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground antialiased;
     font-size: calc(var(--font-size-base) * var(--font-size-scale));
-    line-height: 1.8;
-    letter-spacing: 0.01em;
+    line-height: 1.85;
+    letter-spacing: 0.02em;
+    font-feature-settings: "palt" 1;
+    /* 한지 텍스처 배경 */
+    background-image:
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  }
+
+  /* 세리프 디스플레이 폰트 */
+  .font-display {
+    font-family: var(--font-nanum-myeongjo), serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
   }
 
   /* 노인 접근성 강화 - 큰 폰트, 명확한 포커스 */
   h1 {
-    @apply text-4xl font-bold tracking-tight;
+    @apply text-4xl md:text-5xl font-bold tracking-tight;
+    line-height: 1.3;
   }
   h2 {
-    @apply text-3xl font-bold tracking-tight;
+    @apply text-3xl md:text-4xl font-bold tracking-tight;
+    line-height: 1.35;
   }
   h3 {
-    @apply text-2xl font-semibold;
+    @apply text-2xl md:text-3xl font-semibold;
+    line-height: 1.4;
   }
   h4 {
-    @apply text-xl font-semibold;
+    @apply text-xl md:text-2xl font-semibold;
+    line-height: 1.45;
   }
 
   /* 포커스 표시 강화 (접근성) */
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-primary;
+    @apply outline-3 outline-offset-3 outline-primary;
+    outline-style: solid;
   }
 
   /* 버튼/링크 최소 터치 영역 확보 */
@@ -139,24 +211,258 @@
 
   /* 링크 스타일 */
   a {
-    @apply underline-offset-4 hover:underline;
+    @apply underline-offset-4 decoration-primary/30 hover:decoration-primary transition-colors;
+  }
+
+  /* 선택 영역 스타일 */
+  ::selection {
+    background: oklch(0.45 0.12 175 / 0.2);
+    color: oklch(0.22 0.02 45);
   }
 }
 
-/* 스크롤바 스타일 */
+/* 부드러운 스크롤 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 스크롤바 스타일 - 전통적 색상 */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 14px;
 }
 
 ::-webkit-scrollbar-track {
-  background: oklch(0.95 0 0);
+  background: oklch(0.96 0.01 80);
+  border-left: 1px solid oklch(0.90 0.02 75);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: oklch(0.75 0.05 145);
-  border-radius: 6px;
+  background: linear-gradient(180deg, oklch(0.65 0.06 175), oklch(0.55 0.08 175));
+  border-radius: 7px;
+  border: 3px solid oklch(0.96 0.01 80);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.6 0.1 145);
+  background: linear-gradient(180deg, oklch(0.55 0.08 175), oklch(0.45 0.1 175));
+}
+
+/* 애니메이션 키프레임 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* 애니메이션 유틸리티 클래스 */
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.6s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s ease-in-out infinite;
+}
+
+/* 스태거 딜레이 */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+.delay-700 { animation-delay: 700ms; }
+.delay-800 { animation-delay: 800ms; }
+
+/* 초기 불투명도 */
+.opacity-0-initial {
+  opacity: 0;
+}
+
+/* 카드 호버 효과 */
+.card-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 20px 40px -15px oklch(0.45 0.12 175 / 0.15),
+    0 10px 20px -10px oklch(0 0 0 / 0.1);
+}
+
+/* 버튼 호버 효과 */
+.btn-hover {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, oklch(1 0 0 / 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn-hover:hover::before {
+  left: 100%;
+}
+
+/* 이미지 호버 줌 효과 */
+.img-zoom {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-zoom:hover {
+  transform: scale(1.05);
+}
+
+/* 그라데이션 보더 */
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  background: linear-gradient(135deg, oklch(0.45 0.12 175), oklch(0.58 0.18 28));
+  border-radius: inherit;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* 전통 장식 요소 */
+.traditional-ornament {
+  position: relative;
+}
+
+.traditional-ornament::before,
+.traditional-ornament::after {
+  content: '◆';
+  position: absolute;
+  color: oklch(0.45 0.12 175 / 0.3);
+  font-size: 0.75rem;
+}
+
+.traditional-ornament::before {
+  left: -1.5rem;
+}
+
+.traditional-ornament::after {
+  right: -1.5rem;
+}
+
+/* 섹션 구분선 */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    oklch(0.45 0.12 175 / 0.3) 20%,
+    oklch(0.45 0.12 175 / 0.3) 80%,
+    transparent
+  );
+}
+
+/* 고급스러운 그림자 */
+.shadow-elegant {
+  box-shadow:
+    0 4px 6px -1px oklch(0.45 0.12 175 / 0.08),
+    0 2px 4px -1px oklch(0 0 0 / 0.04),
+    inset 0 1px 0 oklch(1 0 0 / 0.5);
+}
+
+.shadow-elegant-lg {
+  box-shadow:
+    0 10px 25px -5px oklch(0.45 0.12 175 / 0.12),
+    0 8px 10px -6px oklch(0 0 0 / 0.08),
+    inset 0 1px 0 oklch(1 0 0 / 0.5);
+}
+
+/* 글로우 효과 */
+.glow-primary {
+  box-shadow: 0 0 30px oklch(0.45 0.12 175 / 0.3);
+}
+
+.glow-warm {
+  box-shadow: 0 0 30px oklch(0.58 0.18 28 / 0.3);
 }
