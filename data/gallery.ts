@@ -55,11 +55,11 @@ export const gallery: GalleryItem[] = [
     id: "gallery-005",
     title: "봄맞이 나들이",
     description: "벚꽃 피는 봄날, 인근 공원으로 나들이를 다녀왔습니다.",
-    thumbnail: "/images/gallery/walking-event.png",
+    thumbnail: "/images/gallery/spring-outing.png",
     images: [
-      "/images/gallery/walking-event.png",
-      "/images/gallery/walking-event.png",
-      "/images/gallery/walking-event.png"
+      "/images/gallery/spring-outing.png",
+      "/images/gallery/spring-outing-2.png",
+      "/images/gallery/spring-outing-3.png"
     ],
     date: "2025-04-10",
     category: "일상"
@@ -68,10 +68,10 @@ export const gallery: GalleryItem[] = [
     id: "gallery-006",
     title: "2025 어버이날 행사",
     description: "어버이날을 맞아 지역 초등학생들과 함께한 특별한 행사입니다.",
-    thumbnail: "/images/gallery/yearend-2025.png",
+    thumbnail: "/images/gallery/parents-day.png",
     images: [
-      "/images/gallery/yearend-2025.png",
-      "/images/gallery/yearend-2025.png"
+      "/images/gallery/parents-day.png",
+      "/images/gallery/parents-day-2.png"
     ],
     date: "2025-05-08",
     category: "행사"
@@ -80,10 +80,10 @@ export const gallery: GalleryItem[] = [
     id: "gallery-007",
     title: "경로당 방문 봉사활동",
     description: "일자리사업 참여자들이 지역 경로당을 방문하여 봉사활동을 펼쳤습니다.",
-    thumbnail: "/images/gallery/walking-event.png",
+    thumbnail: "/images/gallery/volunteer.png",
     images: [
-      "/images/gallery/walking-event.png",
-      "/images/gallery/walking-event.png"
+      "/images/gallery/volunteer.png",
+      "/images/gallery/volunteer-2.png"
     ],
     date: "2025-06-15",
     category: "일상"
@@ -92,10 +92,10 @@ export const gallery: GalleryItem[] = [
     id: "gallery-008",
     title: "실버시터 1기 발대식",
     description: "첫 번째 실버시터 양성과정 수료생 20명의 발대식이 진행되었습니다.",
-    thumbnail: "/images/gallery/caregiver-grad.png",
+    thumbnail: "/images/gallery/silversitter-start.png",
     images: [
-      "/images/gallery/caregiver-grad.png",
-      "/images/gallery/caregiver-grad.png"
+      "/images/gallery/silversitter-start.png",
+      "/images/gallery/silversitter-start-2.png"
     ],
     date: "2025-07-20",
     category: "교육"

@@ -54,57 +54,57 @@
 :root {
   --radius: 1rem;
 
-  /* 한국적 감성의 따뜻한 컬러 팔레트 */
-  /* 배경: 한지 느낌의 따뜻한 아이보리 */
-  --background: oklch(0.985 0.008 85);
-  --foreground: oklch(0.22 0.02 45);
+  /* Forest Canopy 테마 - 자연스럽고 편안한 숲 느낌 */
+  /* 배경: 부드러운 아이보리 #faf9f6 */
+  --background: oklch(0.98 0.005 90);
+  --foreground: oklch(0.25 0.04 140);
 
-  /* 카드: 부드러운 크림색 */
-  --card: oklch(0.995 0.005 85);
-  --card-foreground: oklch(0.22 0.02 45);
-  --popover: oklch(0.995 0.005 85);
-  --popover-foreground: oklch(0.22 0.02 45);
+  /* 카드: 밝은 아이보리 */
+  --card: oklch(0.99 0.003 90);
+  --card-foreground: oklch(0.25 0.04 140);
+  --popover: oklch(0.99 0.003 90);
+  --popover-foreground: oklch(0.25 0.04 140);
 
-  /* Primary - 단청의 청록색 (전통/신뢰/안정) */
-  --primary: oklch(0.45 0.12 175);
-  --primary-foreground: oklch(0.995 0.005 85);
+  /* Primary - 포레스트 그린 #2d4a2b (신뢰/안정/자연) */
+  --primary: oklch(0.35 0.08 145);
+  --primary-foreground: oklch(0.98 0.005 90);
 
-  /* Secondary - 따뜻한 황토색 (친근/편안) */
-  --secondary: oklch(0.94 0.03 75);
-  --secondary-foreground: oklch(0.35 0.08 55);
+  /* Secondary - 세이지 #7d8471 (부드러움/조화) */
+  --secondary: oklch(0.58 0.03 125);
+  --secondary-foreground: oklch(0.98 0.005 90);
 
-  /* Warm - 단청의 주홍/적색 (활력/따뜻함) */
-  --warm: oklch(0.58 0.18 28);
-  --warm-foreground: oklch(0.995 0.005 85);
+  /* Warm - 올리브 그린 #a4ac86 (따뜻함/편안함) */
+  --warm: oklch(0.70 0.05 115);
+  --warm-foreground: oklch(0.25 0.04 140);
 
-  /* Earth - 흙빛/갈색 (안정/자연) */
-  --earth: oklch(0.55 0.08 55);
-  --earth-foreground: oklch(0.995 0.005 85);
+  /* Earth - 깊은 세이지 (안정/자연) */
+  --earth: oklch(0.50 0.04 130);
+  --earth-foreground: oklch(0.98 0.005 90);
 
-  --muted: oklch(0.96 0.012 80);
-  --muted-foreground: oklch(0.42 0.02 55);
-  --accent: oklch(0.93 0.025 175);
-  --accent-foreground: oklch(0.35 0.1 175);
+  --muted: oklch(0.94 0.015 115);
+  --muted-foreground: oklch(0.45 0.03 130);
+  --accent: oklch(0.85 0.04 120);
+  --accent-foreground: oklch(0.30 0.06 145);
   --destructive: oklch(0.55 0.2 25);
-  --border: oklch(0.90 0.02 75);
-  --input: oklch(0.95 0.01 80);
-  --ring: oklch(0.45 0.12 175);
+  --border: oklch(0.88 0.025 120);
+  --input: oklch(0.95 0.01 110);
+  --ring: oklch(0.35 0.08 145);
 
-  /* 차트 컬러 - 오방색 기반 */
-  --chart-1: oklch(0.45 0.12 175); /* 청 */
-  --chart-2: oklch(0.58 0.18 28);  /* 적 */
-  --chart-3: oklch(0.72 0.15 95);  /* 황 */
-  --chart-4: oklch(0.55 0.08 55);  /* 흑(갈) */
-  --chart-5: oklch(0.92 0.02 85);  /* 백 */
+  /* 차트 컬러 - Forest Canopy 기반 */
+  --chart-1: oklch(0.35 0.08 145); /* 포레스트 그린 */
+  --chart-2: oklch(0.58 0.03 125); /* 세이지 */
+  --chart-3: oklch(0.70 0.05 115); /* 올리브 */
+  --chart-4: oklch(0.45 0.05 90);  /* 브라운 액센트 */
+  --chart-5: oklch(0.80 0.03 120); /* 라이트 세이지 */
 
-  --sidebar: oklch(0.98 0.01 85);
-  --sidebar-foreground: oklch(0.22 0.02 45);
-  --sidebar-primary: oklch(0.45 0.12 175);
-  --sidebar-primary-foreground: oklch(0.995 0.005 85);
-  --sidebar-accent: oklch(0.93 0.025 175);
-  --sidebar-accent-foreground: oklch(0.35 0.1 175);
-  --sidebar-border: oklch(0.90 0.02 75);
-  --sidebar-ring: oklch(0.45 0.12 175);
+  --sidebar: oklch(0.96 0.01 110);
+  --sidebar-foreground: oklch(0.25 0.04 140);
+  --sidebar-primary: oklch(0.35 0.08 145);
+  --sidebar-primary-foreground: oklch(0.98 0.005 90);
+  --sidebar-accent: oklch(0.85 0.04 120);
+  --sidebar-accent-foreground: oklch(0.30 0.06 145);
+  --sidebar-border: oklch(0.88 0.025 120);
+  --sidebar-ring: oklch(0.35 0.08 145);
 
   /* 노인 접근성 폰트 크기 조절용 */
   --font-size-base: 1.25rem;
@@ -124,35 +124,35 @@
   --font-size-scale: 1.15;
 }
 
-/* 한지 텍스처 배경 */
+/* 자연스러운 텍스처 배경 */
 .hanji-texture {
   background-image:
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.02'/%3E%3C/svg%3E");
 }
 
-/* 전통 문양 패턴 */
+/* 나뭇잎 패턴 */
 .pattern-traditional {
   background-image:
-    radial-gradient(circle at 25% 25%, oklch(0.45 0.12 175 / 0.03) 1px, transparent 1px),
-    radial-gradient(circle at 75% 75%, oklch(0.58 0.18 28 / 0.03) 1px, transparent 1px);
+    radial-gradient(circle at 25% 25%, oklch(0.35 0.08 145 / 0.04) 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, oklch(0.58 0.03 125 / 0.04) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
-/* 부드러운 그라데이션 */
+/* 부드러운 숲 그라데이션 */
 .gradient-warm {
   background: linear-gradient(
     135deg,
-    oklch(0.985 0.008 85) 0%,
-    oklch(0.96 0.015 80) 50%,
-    oklch(0.94 0.02 75) 100%
+    oklch(0.98 0.005 90) 0%,
+    oklch(0.95 0.015 115) 50%,
+    oklch(0.92 0.02 120) 100%
   );
 }
 
 .gradient-header {
   background: linear-gradient(
     180deg,
-    oklch(0.995 0.005 85) 0%,
-    oklch(0.985 0.008 85) 100%
+    oklch(0.99 0.003 90) 0%,
+    oklch(0.97 0.01 110) 100%
   );
 }
 
@@ -167,9 +167,9 @@
     line-height: 1.85;
     letter-spacing: 0.02em;
     font-feature-settings: "palt" 1;
-    /* 한지 텍스처 배경 */
+    /* 자연스러운 숲 텍스처 배경 */
     background-image:
-      url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.02'/%3E%3C/svg%3E");
   }
 
   /* 세리프 디스플레이 폰트 */
@@ -216,8 +216,8 @@
 
   /* 선택 영역 스타일 */
   ::selection {
-    background: oklch(0.45 0.12 175 / 0.2);
-    color: oklch(0.22 0.02 45);
+    background: oklch(0.35 0.08 145 / 0.25);
+    color: oklch(0.25 0.04 140);
   }
 }
 
@@ -226,24 +226,24 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 스크롤바 스타일 - 전통적 색상 */
+/* 스크롤바 스타일 - Forest Canopy */
 ::-webkit-scrollbar {
   width: 14px;
 }
 
 ::-webkit-scrollbar-track {
-  background: oklch(0.96 0.01 80);
-  border-left: 1px solid oklch(0.90 0.02 75);
+  background: oklch(0.95 0.01 110);
+  border-left: 1px solid oklch(0.88 0.025 120);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, oklch(0.65 0.06 175), oklch(0.55 0.08 175));
+  background: linear-gradient(180deg, oklch(0.58 0.03 125), oklch(0.45 0.05 135));
   border-radius: 7px;
-  border: 3px solid oklch(0.96 0.01 80);
+  border: 3px solid oklch(0.95 0.01 110);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, oklch(0.55 0.08 175), oklch(0.45 0.1 175));
+  background: linear-gradient(180deg, oklch(0.45 0.05 135), oklch(0.35 0.08 145));
 }
 
 /* 애니메이션 키프레임 */
@@ -358,8 +358,8 @@ html {
 .card-hover:hover {
   transform: translateY(-8px);
   box-shadow:
-    0 20px 40px -15px oklch(0.45 0.12 175 / 0.15),
-    0 10px 20px -10px oklch(0 0 0 / 0.1);
+    0 20px 40px -15px oklch(0.35 0.08 145 / 0.2),
+    0 10px 20px -10px oklch(0 0 0 / 0.08);
 }
 
 /* 버튼 호버 효과 */
@@ -403,24 +403,24 @@ html {
   position: absolute;
   inset: 0;
   padding: 2px;
-  background: linear-gradient(135deg, oklch(0.45 0.12 175), oklch(0.58 0.18 28));
+  background: linear-gradient(135deg, oklch(0.35 0.08 145), oklch(0.58 0.03 125));
   border-radius: inherit;
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
   pointer-events: none;
 }
 
-/* 전통 장식 요소 */
+/* 자연 장식 요소 */
 .traditional-ornament {
   position: relative;
 }
 
 .traditional-ornament::before,
 .traditional-ornament::after {
-  content: '◆';
+  content: '●';
   position: absolute;
-  color: oklch(0.45 0.12 175 / 0.3);
-  font-size: 0.75rem;
+  color: oklch(0.35 0.08 145 / 0.3);
+  font-size: 0.5rem;
 }
 
 .traditional-ornament::before {
@@ -437,8 +437,8 @@ html {
   background: linear-gradient(
     90deg,
     transparent,
-    oklch(0.45 0.12 175 / 0.3) 20%,
-    oklch(0.45 0.12 175 / 0.3) 80%,
+    oklch(0.35 0.08 145 / 0.25) 20%,
+    oklch(0.35 0.08 145 / 0.25) 80%,
     transparent
   );
 }
@@ -446,23 +446,23 @@ html {
 /* 고급스러운 그림자 */
 .shadow-elegant {
   box-shadow:
-    0 4px 6px -1px oklch(0.45 0.12 175 / 0.08),
+    0 4px 6px -1px oklch(0.35 0.08 145 / 0.1),
     0 2px 4px -1px oklch(0 0 0 / 0.04),
     inset 0 1px 0 oklch(1 0 0 / 0.5);
 }
 
 .shadow-elegant-lg {
   box-shadow:
-    0 10px 25px -5px oklch(0.45 0.12 175 / 0.12),
-    0 8px 10px -6px oklch(0 0 0 / 0.08),
+    0 10px 25px -5px oklch(0.35 0.08 145 / 0.15),
+    0 8px 10px -6px oklch(0 0 0 / 0.06),
     inset 0 1px 0 oklch(1 0 0 / 0.5);
 }
 
 /* 글로우 효과 */
 .glow-primary {
-  box-shadow: 0 0 30px oklch(0.45 0.12 175 / 0.3);
+  box-shadow: 0 0 30px oklch(0.35 0.08 145 / 0.25);
 }
 
 .glow-warm {
-  box-shadow: 0 0 30px oklch(0.58 0.18 28 / 0.3);
+  box-shadow: 0 0 30px oklch(0.70 0.05 115 / 0.3);
 }
